@@ -54,6 +54,9 @@
     <ClCompile Include="problem10.cpp">
       <Filter>Source Files\Solutions</Filter>
     </ClCompile>
+    <ClCompile Include="problem11.cpp">
+      <Filter>Source Files\Solutions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kmath.h">
