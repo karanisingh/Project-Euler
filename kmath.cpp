@@ -20,7 +20,8 @@ namespace kmath
         if (reversed == cNum) return true;
         else return false;
         */
-        
+
+        //manually get each digit from the 6 digit number
         if (num / 100000 == num % 10) {
             if ((num % 100000) / 10000 == (num % 100) / 10) {
                 if ((num % 10000) / 1000 == (num % 1000) / 100) {
@@ -32,9 +33,10 @@ namespace kmath
         
     }
 	
-    //using math, I determined that I only need to check the numbers 11-20
+
     bool isDivisible(int num)
     {
+        //using math, I determined that I only need to check the numbers 11-20
         //If you check in reverse order, then you get through the most numbers quickly
         for (int f = 20; f >= 11; --f) 
         {
@@ -44,6 +46,22 @@ namespace kmath
             }
         }
         return true;
+    }
+
+
+    int sumSquares(void)
+    {
+        int sum{ 0 };
+        for (int i = 1; i <= 100; ++i) sum += (i * i);
+        return sum;
+    }
+
+
+    int squareSums(void)
+    {
+        int sum{ 0 };
+        for (int i = 1; i <= 100; ++i) sum += i;
+        return sum * sum;
     }
 }
 

@@ -42,6 +42,7 @@ int problem5()
 	//Check each even-number after 2500
 	for (int i = 2522;; i += 2)
 	{
+		//check if divisibly by all 20. If so, return that number
 		if (kmath::isDivisible(i)) return i;
 		else continue;
 	}

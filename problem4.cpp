@@ -17,10 +17,12 @@
 int problem4()
 {
 	int answer{ 0 };
+	//iterate through every number from 1
 	for (int i = 999; i >= 100; --i)
 	{
 		for (int j = 999; j >= 100; --j)
 		{
+			//check if it is a palindrome and if it is larger than current answer
 			if (kmath::isPalindrome(i * j) && i * j > answer) answer = i * j;
 		}
 	}
