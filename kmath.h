@@ -3,7 +3,28 @@
 
 namespace kmath
 {
-	//Swaps two integers by using a temporary variable and reassignment through pointers
-	void swap(int* x, int* y);
-	bool isPrime(long long n);
+	//Swaps two values by using a temporary variable and reassignment through pointers
+	template <typename T>
+	void swap(T* x, T* y)
+	{
+		int temp = *x;
+		*x = *y;
+		*y = temp;
+	}
+
+	//Determines if a value is prime by brute force with small optimizations
+	template <typename T>
+	bool isPrime(T n)
+	{
+		//OPTIMIZATION check even case once
+		if (n % 2 == 0) return false;
+
+		//OPTIMIZATION only need to check odds up until sqrt(n)
+		for (T i = 3; i * i <= n; i += 2)
+		{
+			if (n % i == 0) return false;
+			else continue;
+		}
+		return true;
+	}
 }
