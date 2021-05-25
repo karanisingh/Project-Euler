@@ -27,6 +27,9 @@
     <ClCompile Include="problem2.cpp">
       <Filter>Source Files\Solutions</Filter>
     </ClCompile>
+    <ClCompile Include="kmath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kmath.h">

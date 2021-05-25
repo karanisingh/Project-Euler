@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="kmath.cpp" />
     <ClCompile Include="SolutionRunner.cpp" />
     <ClCompile Include="problem1.cpp" />
     <ClCompile Include="problem2.cpp" />
