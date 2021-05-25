@@ -27,4 +27,5 @@ int problem7()
 			if (counter == 10001) return i;
 		}
 	}
+	return 0;
 }

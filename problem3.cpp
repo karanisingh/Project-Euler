@@ -25,4 +25,5 @@ int problem3()
 			if (kmath::isPrime(g / i)) return int(g / i);
 		}
 	}
+	return 0;
 }

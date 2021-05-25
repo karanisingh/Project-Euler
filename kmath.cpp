@@ -63,6 +63,27 @@ namespace kmath
         for (int i = 1; i <= 100; ++i) sum += i;
         return sum * sum;
     }
+
+
+    void sieve(int (&primes)[2000000])
+    {
+        long i = 2;
+        while (i * i <= 2000000)
+        {
+            if (primes[i] == 0)
+            {
+                ++i;
+                continue;
+            }
+            long j = 2 * i;
+            while (j < 2000000)
+            {
+                primes[j] = 0;
+                j += i;
+            }
+            ++i;
+        }
+    }
 }
 
 

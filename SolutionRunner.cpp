@@ -8,7 +8,7 @@
 int main()
 {
 	auto start = std::chrono::high_resolution_clock::now();
-	auto returnValue = problem9();          //this line is used to test specific solutions' functions
+	auto returnValue = problem10();          //this line is used to test specific solutions' functions
 	auto end = std::chrono::high_resolution_clock::now();
 	auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 	std::cout << returnValue << "\n" << duration.count() << " milliseconds." << std::endl;

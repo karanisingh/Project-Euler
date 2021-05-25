@@ -36,4 +36,5 @@ int problem9()
 			
 		}
 	}
+	return 0;
 }
