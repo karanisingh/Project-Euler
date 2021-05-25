@@ -27,4 +27,6 @@ namespace kmath
 		}
 		return true;
 	}
+
+	bool isPalindrome(int num);
 }
