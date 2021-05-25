@@ -142,6 +142,7 @@
     <ClCompile Include="kmath.cpp" />
     <ClCompile Include="problem10.cpp" />
     <ClCompile Include="problem11.cpp" />
+    <ClCompile Include="problem12.cpp" />
     <ClCompile Include="problem4.cpp" />
     <ClCompile Include="problem5.cpp" />
     <ClCompile Include="problem6.cpp" />

@@ -33,4 +33,5 @@ namespace kmath
 	int sumSquares(void);            //helper function for problem 6
 	int squareSums(void);            //helper function for problem 7
 	void sieve(int  (&primes)[2000000]);         //helper function for problem 10
+	int numDivisors(long num);       //helper function for problem 12
 }

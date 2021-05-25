@@ -1,5 +1,7 @@
 //kmath.cpp: holds the definitions for my personal math namespace
 
+#include <cmath>
+
 namespace kmath
 {
     //Tried with recursive (do-while loop) first, but almost 3x more efficient with 
@@ -33,7 +35,7 @@ namespace kmath
         
     }
 	
-
+    //returns true if a number is divisible by all the numbers [1,20]
     bool isDivisible(int num)
     {
         //using math, I determined that I only need to check the numbers 11-20
@@ -48,7 +50,7 @@ namespace kmath
         return true;
     }
 
-
+    //returns the sum of the squars of the first 100 numbers
     int sumSquares(void)
     {
         int sum{ 0 };
@@ -56,7 +58,7 @@ namespace kmath
         return sum;
     }
 
-
+    //returns the square of the sum of the first 100 numbers
     int squareSums(void)
     {
         int sum{ 0 };
@@ -83,6 +85,21 @@ namespace kmath
             }
             ++i;
         }
+    }
+
+    //returns the multiplicity of divisors of a number
+    int numDivisors(long num)
+    {
+        int counter{ 0 };
+
+        //lower range since we can count for divisors "> sqrt(num)" while we are counting the first ones
+        for (int i = 1; i * i < num; ++i)
+        {
+            if (num % i == 0) counter += 2;
+        }
+        //check if num is a square
+        if (pow(std::floor(sqrt(num)), 2) == num) ++counter;
+        return counter;
     }
 }
 
