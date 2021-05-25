@@ -6,3 +6,4 @@ int problem3();
 int problem4();
 int problem5();
 int problem6();
+int problem7();
