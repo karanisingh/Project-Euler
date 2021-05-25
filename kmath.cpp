@@ -32,6 +32,19 @@ namespace kmath
         
     }
 	
+    //using math, I determined that I only need to check the numbers 11-20
+    bool isDivisible(int num)
+    {
+        //If you check in reverse order, then you get through the most numbers quickly
+        for (int f = 20; f >= 11; --f) 
+        {
+            //if not divisible, return false, else keep going
+            if (num % f != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
 
 

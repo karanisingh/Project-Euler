@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="kmath.cpp" />
     <ClCompile Include="problem4.cpp" />
+    <ClCompile Include="problem5.cpp" />
     <ClCompile Include="SolutionRunner.cpp" />
     <ClCompile Include="problem1.cpp" />
     <ClCompile Include="problem2.cpp" />

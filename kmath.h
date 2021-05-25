@@ -29,4 +29,5 @@ namespace kmath
 	}
 
 	bool isPalindrome(int num);
+	bool isDivisible(int num);
 }
