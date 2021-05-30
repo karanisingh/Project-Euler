@@ -55,7 +55,7 @@ int problem14()
 	for (int i = 2; i < 1000000; ++i)
 	{
 		int currentLength{ 1 };
-		for (std::int64_t temp = i; temp > 1; ++currentLength)
+		for (long temp = i; temp > 1; ++currentLength)
 		{
 			if (temp % 2 == 0)	temp = temp / 2;
 			else				temp = (3 * temp) + 1;
