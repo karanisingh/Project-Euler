@@ -114,7 +114,6 @@
 //Rather than implementing a BigInteger, I thought it would be easier to evaluate through a string
 
 #include <string>
-#include <iostream>
 #include "kmath.h"
 
 std::string problem13()
