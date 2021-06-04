@@ -13,7 +13,11 @@
 #include "BigInteger.h"
 
 /*
-* The strategy is to use a BigInteger class to calculate the number
+* The strategy is to use a BigInteger class to calculate the number.
+* 
+* Could have written less code by creating a function for the bigint, but
+* decided that it would be beneficial to learn how to implement bigint, as
+* it could be useful later on!
 */
  int problem16()
 {

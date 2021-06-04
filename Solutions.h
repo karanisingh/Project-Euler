@@ -1,6 +1,8 @@
 //Solutions.h: Header file for the solution functions
 #pragma once
 
+#include <string>
+
 int problem1();
 int problem2();
 int problem3();
@@ -17,3 +19,4 @@ std::string problem13();
 int problem14();
 long long problem15(long long r = 20, long long c = 20);
 int problem16();
+int problem17();
