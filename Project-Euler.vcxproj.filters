@@ -72,12 +72,18 @@
     <ClCompile Include="problem16.cpp">
       <Filter>Source Files\Solutions</Filter>
     </ClCompile>
+    <ClCompile Include="BigInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kmath.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Solutions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BigInteger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

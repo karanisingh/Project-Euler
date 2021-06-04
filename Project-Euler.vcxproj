@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BigInteger.cpp" />
     <ClCompile Include="kmath.cpp" />
     <ClCompile Include="problem10.cpp" />
     <ClCompile Include="problem11.cpp" />
@@ -159,6 +160,7 @@
     <ClCompile Include="problem13.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BigInteger.h" />
     <ClInclude Include="Solutions.h" />
     <ClInclude Include="kmath.h" />
   </ItemGroup>

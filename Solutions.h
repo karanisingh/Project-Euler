@@ -1,3 +1,4 @@
+//Solutions.h: Header file for the solution functions
 #pragma once
 
 int problem1();

@@ -6,9 +6,35 @@
 * 2^15 = 32768 and the sum of its digits is 26
 * 
 * What is the sum of the digits of the number 2^1000?
+* 
+* Solution: 1366
+* Time: 14 ms
 */
+#include "BigInteger.h"
 
-int problem16()
+/*
+* The strategy is to use a BigInteger class to calculate the number
+*/
+ int problem16()
 {
+	//initialize the BigInteger with 1
+	std::string s = "1";
+	BigInteger myInt(s);
 
+	//calculate 2^1000
+	for (int i = 1; i <= 1000; ++i)
+	{
+		myInt = myInt * 2;
+	}
+
+	//add up the digits of 2^1000
+	s = myInt.getValue();
+	int sum{ 0 };
+	for (auto x : s)
+	{
+		sum += (x - '0');
+	}
+
+	//return the sum
+	return sum;
 }
