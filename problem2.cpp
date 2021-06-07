@@ -17,7 +17,9 @@
 
 #include "kmath.h"     //will use kmath::swap()
 
-//No clever strategy needed, simple computation
+/*
+* Strategy: brute force, optimized it a little bit but was 0 ms before and after
+*/
 int problem2()
 {
 	int sum{ 0 };

@@ -5,10 +5,6 @@
 
 /*
 * This BigInteger holds an integer's value in a vector.
-* 
-* Is only made for multiplying a number by two.
-* 
-* Will be updated if needed in the future
 */
 class BigInteger
 {

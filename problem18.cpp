@@ -26,16 +26,16 @@
 * Time: 0 ms
 */
 
-#include "Solutions.h"
-
-
 /*
-* Strategy is to use a greedy algorithm:
+* Strategy: use a greedy algorithm-
 * 
 * Decompose the bottom two rows into one row which represents the greatest sum that can be achieved from a path
 * 
 * Keep doing this until the greatest sum is in the first element of the first row ( index(0,0) )
 */
+
+#include "Solutions.h"
+
 int problem18()
 {
 	//the triangle

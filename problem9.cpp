@@ -20,7 +20,10 @@
 
 #include <iostream>
 
-//brute force, check every number. because it's only 1000 no need to really optimize.
+/*
+* Strategy: brute force, check every number. because it's only 1000 no need to really optimize
+*/
+
 int problem9()
 {
 	int c{};

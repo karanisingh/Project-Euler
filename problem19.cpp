@@ -15,6 +15,10 @@
 * Time: 0 ms
 */
 
+/*
+* Strategy: iterate through the years, then iterate through the months, and keep determining the next month's first day
+*/
+
 int problem19()
 {
 	int numSundays{ 0 };

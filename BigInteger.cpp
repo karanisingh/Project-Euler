@@ -44,22 +44,24 @@ BigInteger BigInteger::operator=(const BigInteger& b)
 * 
 * Currently only compatable with argument "2"
 */
-BigInteger BigInteger::operator*(const int& i)
+BigInteger BigInteger::operator*(const int& s)
 {
 
 	int carryOver{ 0 };								//to hold the carry over for each digit's calculation
 	for (int i = container.size()-1; i >= 0; --i)	//iterates from least to most significant digit
 	{
-		int sum{ container[i] * 2 + carryOver };    //calculates the sum of multiplying a digit by 2
+		int sum{ container[i] * s + carryOver };    //calculates the sum of multiplying a digit by 2
 
 		container[i] = sum % 10;                    //replaces digit with correct value
 		carryOver = sum / 10;                       //dtermines carry over for the next digit
 	}
 	
-	if (carryOver == 1)								//if the last carry over is 1, then we must push a 1 onto the front of the vector
+
+	while (carryOver != 0)							//adds the carry over to the value;
 	{
 		++digits;
-		container.insert(container.begin(),1);
+		container.insert(container.begin(), carryOver % 10);
+		carryOver /= 10;
 	}
 
 

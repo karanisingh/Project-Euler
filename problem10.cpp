@@ -7,28 +7,45 @@
 * 
 * Find the sum of all the primes below two million
 * 
-* Solution: 142913828922
-* Time: 
+* Solution: 142 913 828 922
+* Time: 22 ms
 */
 
-#include "kmath.h"
 
-//This problem takes a long time if you choose to do brute force. 
-//I have implemented the Sieve of Arastothenes
-long problem10()
+/*
+* Strategy: can't use brute force, too many loops, so used the Sieve of Eratosthenes
+* 
+* The strategy is to populate a list of integers up to a number, 
+* Start at a number, and then remove all multiples of that number for the list
+* Keep going, then all the remining numbers in the list are prime
+*/
+
+int list[2000000] = { 0 };
+
+long long problem10()
 {
-	int primes[2000000]{ 1 };
+	long long sum{ 0 };
 
-	primes[0] = 0;
-	primes[1] = 1;
+	//initialize the list with the correct numbers, not even since they arent primes
+	for (int i = 3; i < 2000000; i += 2) list[i] = i;
 
-	kmath::sieve(primes);
-
-	long sum{ 0 };
-	for (int i = 1; i < 2000000; ++i)
+	//iterate through each number in the list
+	for (int i = 3; i < 2000000; ++i)
 	{
-		if (primes[i] == 1) sum += i;
+		//if the number has not already been eliminated, eliminate all of its multiples from the list
+		if (list[i] != 0)
+		{
+			//eliminate all of the multiples
+			for (int j = 3; j * i < 2000000; j+=2)	list[i * j] = 0;
+		}
 	}
-	return sum;
 
+	//sum up the elements in the list
+	for (auto x : list)
+	{
+		sum += x;
+	}
+
+	//don't forget that 2 is prime!
+	return sum + 2;
 }

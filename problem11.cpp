@@ -35,9 +35,8 @@
 * Time: 0 ms
 */
 
-
 /*
-* I decided not to add any of these functions into kmath since they aren't really math
+* Strategy: populate an array of arrays. Then use functions to iterate through each product of four adjacent numbers
 */
 
 #include <string>

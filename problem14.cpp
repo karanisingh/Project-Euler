@@ -9,9 +9,11 @@
 * Time: 449 ms
 */
 
-//Original Strategy: Keep an array that holds each starting number's length and use it to calculate others
-//int* arr = new int[1000000];
 /*
+Original Strategy: Keep an array that holds each starting number's length and use it to calculate others
+
+int* arr = new int[1000000];
+
 //recursively calculates the length of the collatz seqeuence of a number
 int collatz(std::int64_t x)
 {
@@ -24,10 +26,34 @@ int collatz(std::int64_t x)
 	}
 	else								return (collatz(3 * x + 1) + 1);
 }
+
+int problem14()
+{
+	//fill the array with zeros
+	std::fill(arr, arr + 1000000, 0);
+	int gStart{ 2 };
+	arr[1] = 1;
+	arr[2] = 2;
+	//std::cout << "here ";
+
+	//fill in the arry with the chains' lengths up to 1000000
+	for (std::int64_t i = 3; i < 1000000; ++i)
+	{
+		collatz(i);
+		//if (arr[i] > arr[gStart]) gStart = i;
+		//std::cout << i << " ";
+	}
+	//std::cout << "here ";
+	return arr[3];
+}
 */
 
 
-//New strategy: realized that original strategy did not account for values larger than 1000000, so converted it to while loop, then converted it to for loop based on length
+/*
+* New strategy: realized that original strategy did not account for values larger than 1000000, so converted it to while loop, then converted it to for loop based on length
+* 
+* Surprisingly viable
+*/
 int problem14()
 {
 	/*

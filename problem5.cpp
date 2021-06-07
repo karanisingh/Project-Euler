@@ -35,6 +35,10 @@
 
 #include "kmath.h"
 
+/*
+* Strategy: burute force
+*/
+
 int problem5()
 {
 	int answer{ 0 };

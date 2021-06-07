@@ -13,14 +13,15 @@
 
  
 /*
-* much simpler to use mathematics to determine a solution.
+* Much simpler to use mathematics to determine a solution.
 * my original thinking was to find the number of combinations of "downs" and "rights" where there have to be 20 downs and 20 rights.
 * this can be easily solved using combinations: 40! / 20! * 20! = 137846528820
 */
 
-//algorithmic computation is very heavy
+/*
+* Strategy: recursively calculate each path by calculating every path's potential paths and continuing
+*/
 
-//recursively count all paths starting from the destination
 long long problem15(long long r = 20, long long c = 20)
 {
     //if we are in the upmost row or leftmost column, then there is only one path leading to the end

@@ -14,13 +14,21 @@
 * Time: 420 ms
 */
 
+/*
+* Strategy: Brute force, simply just calculate each triangle number until we reach over five hundred divisors
+*/
+
 #include "kmath.h"
 
 long problem12()
 {
+	//this is to hold the current triangle as well as the eventual answer
 	long target{ 0 };
+
+	//iterate through each number
 	for (long i = 1;; ++i)
 	{
+		//can calculate each triangle number by simply adding the integers
 		target += i;
 		if (kmath::numDivisors(target) > 500) return target;
 	}

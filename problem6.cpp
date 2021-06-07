@@ -17,7 +17,10 @@
 
 #include "kmath.h"
 
-//no clever strategy needed, simple computation
+/*
+* Strategy: no strategy, simple computation
+*/
+
 int problem6()
 {
 	//use helper functions for readability

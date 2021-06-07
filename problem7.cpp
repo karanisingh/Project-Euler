@@ -14,7 +14,10 @@
 
 #include "kmath.h"
 
-//brute force with kmath function
+/*
+* Strategy: brute fource, no need to optimize more than is
+*/
+
 int problem7()
 {
 	//int target{ 0 };

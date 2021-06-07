@@ -111,7 +111,10 @@
 * Solution: 5537376230
 * Time: 0 ms
 */
-//Rather than implementing a BigInteger, I thought it would be easier to evaluate through a string
+
+/*
+* Strategy: hold all of the numbers in a string, and then evaluate each digit of each number
+*/
 
 #include <string>
 #include "kmath.h"

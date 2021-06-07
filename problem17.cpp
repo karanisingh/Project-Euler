@@ -11,8 +11,6 @@
 * Time: 0 ms
 */
 
-#include "Solutions.h"
-
 /*
 * Way easier when done with numbers and simple math.
 * 
@@ -28,6 +26,12 @@
 * 
 * Value of 1-1000 = 854 + (854*9) + (7*900) + (3*891) + (36*100) + 11 = 21124 
 */
+
+/*
+* Strategy: calculate how many letters ones digits take up, tens digits, hundreds digits, and then the "hundred and" part
+*/
+
+#include "Solutions.h"
 
 int convert(int x)
 {

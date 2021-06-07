@@ -12,7 +12,9 @@
 * Time: 0 ms
 */
 
-//No strategy, just brute force as this is a simple computational problem
+/*
+* Strategy: brute force
+*/
 int problem1()
 {
 	int sum{ 0 };

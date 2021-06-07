@@ -14,6 +14,10 @@
 
 #include "kmath.h"
 
+/*
+* Strategy: brute force, no way to optimize it more than it currently is
+*/
+
 int problem4()
 {
 	int answer{ 0 };
